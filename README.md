@@ -4,7 +4,7 @@ This is a modular, runtime-remappable and easily extensible digital controller s
 
 - [Legal information and license](#legalInformationAndLicense)
 - [Firmware explanation](#firmwareexplanation)  
-- [Safety information](#safetyInformation)  
+- [Safety information](#safetyInformation) 
 - [Raspberry Pico Perks](#raspberryPicoPerks)
 - [How to program your board](#howToProgramYourBoard)
 - [Modes](#modes)
