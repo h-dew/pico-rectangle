@@ -103,8 +103,8 @@ int main() {
 
     // Else:
     
-    // 17 - GP13 - CLeft - Melee / XInput
-    if (!gpio_get(13)) USBConfigurations::Xbox360::enterMode([](){
+    // 17 - GP11 - CLeft - Melee / XInput
+    if (!gpio_get(11)) USBConfigurations::Xbox360::enterMode([](){
         USBConfigurations::Xbox360::actuateReportFromGCState(DACAlgorithms::MeleeF1::getGCReport(GpioToButtonSets::F1::defaultConversion()));
     });
 
