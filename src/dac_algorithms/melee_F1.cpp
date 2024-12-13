@@ -1,5 +1,6 @@
 #include "dac_algorithms/melee_F1.hpp"
 #include "communication_protocols/joybus.hpp"
+#include "<cstdio>"
 
 namespace DACAlgorithms {
 namespace MeleeF1 {
