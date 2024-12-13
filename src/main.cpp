@@ -55,7 +55,7 @@ int main() {
     #endif
     ;
 
-    std::vector<uint8_t> modePins = { 22, 21, 20, 16, 17, 14, 11, 7, 6, 5, 4, 2, keyboardPin }; // DO NOT USE PIN GP15
+    std::vector<uint8_t> modePins = { 22, 21, 20, 16, 17, 14, 8, 7, 6, 5, 4, 2, keyboardPin }; // DO NOT USE PIN GP15
 
     for (uint8_t modePin : modePins) {
         gpio_init(modePin);
@@ -103,8 +103,8 @@ int main() {
 
     // Else:
     
-    // 17 - GP11 - CLeft - Melee / XInput
-    if (!gpio_get(11)) USBConfigurations::Xbox360::enterMode([](){
+    // 17 - GP8 - CLeft - Melee / XInput
+    if (!gpio_get(8)) USBConfigurations::Xbox360::enterMode([](){
         USBConfigurations::Xbox360::actuateReportFromGCState(DACAlgorithms::MeleeF1::getGCReport(GpioToButtonSets::F1::defaultConversion()));
     });
 
