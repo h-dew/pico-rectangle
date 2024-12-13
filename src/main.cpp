@@ -55,7 +55,7 @@ int main() {
     #endif
     ;
 
-    std::vector<uint8_t> modePins = { 22, 21, 20, 16, 17, 14, 13, 7, 6, 5, 4, 2, keyboardPin }; // DO NOT USE PIN GP15
+    std::vector<uint8_t> modePins = { 22, 21, 20, 16, 17, 14, 11, 7, 6, 5, 4, 2, keyboardPin }; // DO NOT USE PIN GP15
 
     for (uint8_t modePin : modePins) {
         gpio_init(modePin);
