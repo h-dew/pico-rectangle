@@ -140,6 +140,12 @@ GCReport getGCReport(GpioToButtonSets::F1::ButtonSet buttonSet) {
 
     Coords cxy;
 
+    /* output cstick state to usb console */
+    printf("cUp:%d\n", bs.cUp);
+    printf("cDown:%d\n", bs.cDown);
+    printf("cLeft:%d\n", bs.cLeft);
+    printf("cRight:%d\n", bs.cRight);
+
     if (bs.mx && bs.my) cxy = coords(0.0, 0.0);
     else if (cVertical && cHorizontal) cxy = coords(0.525, 0.85);
     else if (cHorizontal) cxy = bs.mx ? coords(0.8375, readUp ? 0.3125 : -0.3125) : coords(1.0, 0.0);
